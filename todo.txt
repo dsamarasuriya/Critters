@@ -1,0 +1,25 @@
+resolve stuff at end of time step
+Wordl time step:
+***1 & 2 are in time step function of each critter 
+1) Must move to new position (Run or Walk)
+	- Cannot move twice (calling run and/or walk twice).
+	  If done, must deduct energy but not move twice.
+2) If 2 or more critters in a position, must resolve
+	- Only one critter can remain 
+	- Can be fighting, reproduction, etc
+	- Can use run or walk in fight scenarios. 
+	  	-Must charge energy cost even if they attempt to walk/run and fail
+	  	-Must
+3) All new critters are added to the population 
+	- If a new critter is made during the timestep
+	  do NOT resolve with other critters in same position
+4) Delete any dead critters (energy == 0)
+	- Apply rest energy to critter first before deciding if they are dead  
+5) Add Algae to the world 
+
+
+
+Critters:
+
+1) Fighter (chance to crit)
+2) Reproducer 
